@@ -1,0 +1,174 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*/
+html, body {
+	font-family: 'Source Code Pro', monospace;
+}
+body {
+  margin: 25px;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(191, 221, 131), rgb(28, 168, 214));;
+}
+.header > p {
+  text-align: center;
+  font-size: 37px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin: 0 0 15px;
+  background-color: rgb(16, 79, 150);
+  color: azure;
+}
+.header > p {
+  animation-name: pulse;
+  animation-duration: 8.8s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 3.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running; 
+}
+/* Arranged in ranbow color */
+@keyframes pulse {
+  0% {
+    background-color: red;
+  }
+  14% {
+    background-color: orange;
+  }
+  28% {
+    background-color: yellow;
+  }
+  42% {
+    background-color: green;
+  }
+  56% {
+    background-color: blue;
+  }
+  70% {
+    background-color: indigo;
+  }
+  84% {
+    background-color: violet;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+label {
+  font-size: 22px;
+  opacity: 0.9;
+}
+/* both input types style  */
+input[type="text"], input[type="email"] {
+  width: 50%;
+  /* font-size: 20px; */
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+/* what happens when focus on clicked/keypress */
+input[type="text"]:focus, input[type="email"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon input[type="text"], input[type="email"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.2s;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon input[type="email"]:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+textarea {
+	padding-left: 40px;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	margin: 8px 0;
+  transition: 0.2s;
+  width: 50%;
+  min-height: 55px;
+  max-height: 150px;
+  resize: none;
+}
+textarea:focus {
+	box-shadow: 0 0 8px 0 dodgerBlue;
+  resize: vertical;
+}
+
+.inputWithIcon textarea + i {
+	  background-color: #aaa;
+	  color: #fff;
+	  padding: 15px 3px;
+	  border-radius: 4px 0 0 4px;
+
+}
+.inputWithIcon textarea:focus + i {
+	background-color: dodgerBlue;
+	box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.button-send {
+  /* min-width: 250px; */
+  height: 30px;
+  color: #f5f7f8;
+  background: #2ebbfc;
+  margin-top: 20px;
+  border: 2px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+.button-send:hover {
+  color: rgb(111, 236, 148); 
+}
+footer {
+  margin: auto;
+  height: 35px;
+  border-radius: 3px;
+ }
+footer > p {
+  font-weight: 500;
+  float: right;
+}
+.left-side a {
+  color: crimson;
+  text-decoration: none;
+}
+.right-side p {
+    color: paleturquoise;
+    text-align: end;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layomailer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css"> -->
+</head>
+<body>
+    <div class="header">
+        <p>Send a mail to Layo</p>
+    </div>
+    <div class="container">
+        <div class="main-form">
+            <form action="send" method="POST">
+                {{msg}} <br>
+                <label for="name">Name</label>
+				<div class="inputWithIcon inputIconBg">
+					<input type="text" name="name" id="name" placeholder="Name" required="">
+					<i class="fa fa-user fa-lg fa-fw" arial-hidden="true"></i>
+                </div> 
+                
+                <label for="email">Email</label>
+				<div class="inputWithIcon inputIconBg">
+					<input type="email" name="email" id="email" placeholder="Email" required="">
+					<i class="fa fa-at fa-lg fa-fw" arial-hidden="true"></i>
+                </div>
+                
+                <label for="subject">Subject</label>
+				<div class="inputWithIcon inputIconBg">
+					<input type="text" name="subject" id="subject" placeholder="Subject" required="">
+					<i class="fa fa-edit fa-lg fa-fw" arial-hidden="true"></i>
+                </div>
+                
+                <label for="message">Message</label>
+				<div class="inputWithIcon">
+					<textarea name="message" id="message" placeholder="Message" rows="6" required=""></textarea>
+					<i class="fa fa-envelope fa-lg fa-fw" arial-hidden="true"></i>
+                </div>
+                
+                <button type="submit" class="button-send"><i class="fa fa-sign-out fa-lg fa-fw" aria-hidden="true"></i>Send <i class="fa fa-paper-plane"></i></button>
+                </i>
+            </form>
+        </div>
+
+    </div> <br>
+    <footer>
+        <div class="left-side">
+            <a href="https://www.instagram.com/mutairu_layo/" target="_blank"> Follow <i class="fa fa-instagram a-lg fa-fw"></i>Follow</a>
+        </div>
+        <div class="right-side">
+            <p>&copy; Muhammed Layo, May 2020.</p>
+        </div>
+    </footer>
+</body>
+</html>
